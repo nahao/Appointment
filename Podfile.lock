@@ -1,0 +1,16 @@
+PODS:
+  - Alamofire (3.1.5)
+  - AVOSCloud (3.2.2)
+  - SVProgressHUD (1.1.3)
+
+DEPENDENCIES:
+  - Alamofire
+  - AVOSCloud
+  - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
+  AVOSCloud: 73eb3e7b772b84998df5fb104813c17b39b25cf3
+  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
+
+COCOAPODS: 0.39.0
