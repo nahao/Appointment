@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5qG-i8-yhh">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--城市-->
+        <scene sceneID="djb-Tf-HQp">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="1km-lr-xzO" customClass="HomeViewController" customModule="Appointment" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8PX-oG-h8B"/>
+                        <viewControllerLayoutGuide type="bottom" id="jaF-Ia-pZy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qzH-XH-bx6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kBi-G0-Dy7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wMm-88-ReG">
+                                <rect key="frame" x="0.0" y="400" width="600" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="kBi-G0-Dy7" secondAttribute="bottom" id="FBf-K8-SXY"/>
+                            <constraint firstItem="kBi-G0-Dy7" firstAttribute="top" secondItem="qzH-XH-bx6" secondAttribute="top" id="T3t-8D-lad"/>
+                            <constraint firstItem="kBi-G0-Dy7" firstAttribute="leading" secondItem="qzH-XH-bx6" secondAttribute="leading" id="go6-8m-cCR"/>
+                            <constraint firstAttribute="trailing" secondItem="kBi-G0-Dy7" secondAttribute="trailing" id="oig-ce-bvx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="城市" id="3P5-GU-XDb">
+                        <barButtonItem key="leftBarButtonItem" title="个人" id="Epe-1H-QI4">
+                            <connections>
+                                <action selector="sliderControl:" destination="1km-lr-xzO" id="tih-lB-1Hh"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="列表" id="fdu-Yi-21h"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ABO-XB-60d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1268" y="417"/>
+        </scene>
+        <!--Home Nav View Controller-->
+        <scene sceneID="V8c-i9-rS3">
+            <objects>
+                <navigationController storyboardIdentifier="HomeNavViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5qG-i8-yhh" customClass="HomeNavViewController" customModule="Appointment" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Rhz-Wy-O2M">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1km-lr-xzO" kind="relationship" relationship="rootViewController" id="WPL-LP-bbc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GHp-r7-grf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="456" y="417"/>
+        </scene>
+    </scenes>
+</document>

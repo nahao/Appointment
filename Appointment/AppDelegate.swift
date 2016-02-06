@@ -8,18 +8,40 @@
 
 import UIKit
 
+let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var mainVc:SCSDrawerViewController!
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        window?.rootViewController = launchVc()
+        
+        window?.makeKeyAndVisible()
+
         
         AVOSCloud.setApplicationId("gdlG0eRrP1arn7uqcpzg8daI-gzGzoHsz", clientKey: "YsXiXlNmIy9re1z2dYW2VG0S")
         AVAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         
         return true
+    }
+    
+    private func launchVc() -> SCSDrawerViewController {
+        
+        let leftVc = UIStoryboard(name: "Slider", bundle: nil).instantiateViewControllerWithIdentifier("SliderViewController") as! SliderViewController
+        let homeNavVc = UIStoryboard(name: "Home", bundle: nil).instantiateViewControllerWithIdentifier("HomeNavViewController") as! HomeNavViewController
+        
+        mainVc = SCSDrawerViewController(leftViewController: leftVc, centerViewController: homeNavVc)
+        
+        return mainVc
+        
     }
 
     func applicationWillResignActive(application: UIApplication) {
