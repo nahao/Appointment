@@ -85,9 +85,19 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods/Alamofire.framework"
+  install_framework "Pods/FXBlurView.framework"
+  install_framework "Pods/MMPopupView.framework"
+  install_framework "Pods/Masonry.framework"
   install_framework "Pods/SVProgressHUD.framework"
+  install_framework "Pods/TPKeyboardAvoiding.framework"
+  install_framework "Pods/pop.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods/Alamofire.framework"
+  install_framework "Pods/FXBlurView.framework"
+  install_framework "Pods/MMPopupView.framework"
+  install_framework "Pods/Masonry.framework"
   install_framework "Pods/SVProgressHUD.framework"
+  install_framework "Pods/TPKeyboardAvoiding.framework"
+  install_framework "Pods/pop.framework"
 fi

@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    var mainVc:SCSDrawerViewController!
+    var drawer:SCSDrawerViewController!
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -36,11 +36,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func launchVc() -> SCSDrawerViewController {
         
         let leftVc = UIStoryboard(name: "Slider", bundle: nil).instantiateViewControllerWithIdentifier("SliderViewController") as! SliderViewController
-        let homeNavVc = UIStoryboard(name: "Home", bundle: nil).instantiateViewControllerWithIdentifier("HomeNavViewController") as! HomeNavViewController
+        let homeNavVc = UIStoryboard(name: "Home", bundle: nil).instantiateViewControllerWithIdentifier("BaseNavigationController") as! BaseNavigationController
         
-        mainVc = SCSDrawerViewController(leftViewController: leftVc, centerViewController: homeNavVc)
+        drawer = SCSDrawerViewController(leftViewController: leftVc, centerViewController: homeNavVc)
         
-        return mainVc
+        return drawer
         
     }
 

@@ -34,7 +34,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="城市" id="3P5-GU-XDb">
-                        <barButtonItem key="leftBarButtonItem" title="个人" id="Epe-1H-QI4">
+                        <barButtonItem key="leftBarButtonItem" image="home_btn_man" id="Epe-1H-QI4">
                             <connections>
                                 <action selector="sliderControl:" destination="1km-lr-xzO" id="tih-lB-1Hh"/>
                             </connections>
@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="1268" y="417"/>
         </scene>
-        <!--Home Nav View Controller-->
+        <!--Base Navigation Controller-->
         <scene sceneID="V8c-i9-rS3">
             <objects>
-                <navigationController storyboardIdentifier="HomeNavViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5qG-i8-yhh" customClass="HomeNavViewController" customModule="Appointment" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="BaseNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5qG-i8-yhh" customClass="BaseNavigationController" customModule="Appointment" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Rhz-Wy-O2M">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -65,4 +65,7 @@
             <point key="canvasLocation" x="456" y="417"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="home_btn_man" width="23" height="23"/>
+    </resources>
 </document>

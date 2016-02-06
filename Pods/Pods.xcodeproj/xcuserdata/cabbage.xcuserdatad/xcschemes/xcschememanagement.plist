@@ -9,6 +9,21 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FXBlurView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MMPopupView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Masonry.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -19,10 +34,25 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>TPKeyboardAvoiding.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>pop.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1B28ED0976D387988CAFA5768D1C7428</key>
+		<key>09893AE7CAEE1B78C69B8AB2E38755F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>26FE19AC2BC1D85A193486E9E296DFCD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -32,7 +62,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B4D3D272B3E25B85177819887A2BF047</key>
+		<key>656F9A577DBFABABB1A772E7C7B3D64F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A9A83F63385AA43314397B8DD375464B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AC07180B8DFBF392352CEAE37F7ED5E0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CA60684AFCB06204EAE5DF40EE3CD746</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD378EDFF42487A7E1BB47D45223953B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
