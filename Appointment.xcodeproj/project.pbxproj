@@ -131,6 +131,13 @@
 			path = Third;
 			sourceTree = "<group>";
 		};
+		8B88983C1C65CC18009841DB /* BottomView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BottomView;
+			sourceTree = "<group>";
+		};
 		8BAFD8A21C534D0900A9892B = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +197,7 @@
 		8BAFD8C61C535A1900A9892B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				8B88983C1C65CC18009841DB /* BottomView */,
 				8B8898131C659BCC009841DB /* Home.storyboard */,
 				8B88981F1C65AC19009841DB /* HomeViewController.swift */,
 			);

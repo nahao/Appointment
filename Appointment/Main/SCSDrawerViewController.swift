@@ -98,7 +98,6 @@ class SCSDrawerViewController: UIViewController,UIGestureRecognizerDelegate {
         self.centerView.autoresizingMask = self.view.autoresizingMask
         
         view.addSubview(centerView)
-        view.backgroundColor = UIColor.whiteColor()
         addCenterViewController()
         
         setupGestureRecognizers()
